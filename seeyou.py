@@ -3,19 +3,19 @@ import time
 import subprocess
 
 #音声ファイルの保存場所
-filedir = "sounds/"
+filedir = "sounds/seeyou/"
 
 #BGMの再生
 subprocess.Popen(["python","loopsound.py"])
 
 #放送内容本文
 time.sleep(1)
-playsound(f"{filedir}seeyou1.wav")
+playsound(f"{filedir}1.wav")
 time.sleep(0.5)
-playsound(f"{filedir}seeyou2.wav")
+playsound(f"{filedir}2.wav")
 time.sleep(0.5)
-playsound(f"{filedir}seeyou3.wav")
+playsound(f"{filedir}3.wav")
 time.sleep(0.5)
-playsound(f"{filedir}seeyou4.wav")
+playsound(f"{filedir}4.wav")
 time.sleep(1)
-playsound(f"{filedir}seeyou5.wav")
+playsound(f"{filedir}5.wav")
