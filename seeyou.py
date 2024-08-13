@@ -6,7 +6,7 @@ import subprocess
 filedir = "sounds/seeyou/"
 
 #BGMの再生
-subprocess.Popen(["python","loopsound.py"])
+bgm = subprocess.Popen(["python","loopsound.py"])
 
 #放送内容本文
 time.sleep(1)
@@ -19,3 +19,5 @@ time.sleep(0.5)
 playsound(f"{filedir}4.wav")
 time.sleep(1)
 playsound(f"{filedir}5.wav")
+
+bgm.communicate()
